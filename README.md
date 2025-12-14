@@ -60,7 +60,7 @@ Because this project uses the `fetch` API for modular loading, it requires a loc
 
 | Typing Interface | Profile Dashboard |
 |:---:|:---:|
-| ![Interface](assets/images/screenshot1.png) | ![Stats](assets/images/screenshot2.png) |
+| ![Interface](assets/images/screenshot2.png) | ![Stats](assets/images/screenshot1.png) |
 | *Real-time visual feedback and validation* | *WPM tracking and user statistics* |
 
 ## 👨‍💻 Author
@@ -69,4 +69,5 @@ Because this project uses the `fetch` API for modular loading, it requires a loc
 
 * [**LinkedIn**](https://il.linkedin.com/in/eran-malachi-6797a5393)
 * [**GitHub**](https://github.com/eranmal)
+
 

@@ -7,7 +7,7 @@
 
 > A fully interactive, single-page web application designed to help users master Hebrew touch typing through gamified progression and real-time analytics.
 
-[**🔴 View Live Demo**](https://eranmal.github.io/hebrew-blind-typing/login.html)
+[**🔴 View Live Demo**](https://eranmal.github.io/Hebrew-Blind-Typing/login.html)
 
 ---
 
@@ -69,3 +69,4 @@ Because this project uses the `fetch` API for modular loading, it requires a loc
 
 * [**LinkedIn**](https://il.linkedin.com/in/eran-malachi-6797a5393)
 * [**GitHub**](https://github.com/eranmal)
+

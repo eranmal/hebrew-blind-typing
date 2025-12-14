@@ -438,8 +438,8 @@ function loadContent(fileName, targetId) {
 
 function showLessonsGrid() {
     const lessonsGrid = document.querySelector('.lessons-grid');
-    
-    if (lessonsGrid) lessonsGrid.style.display = 'grid'; 
+
+    if (lessonsGrid) lessonsGrid.style.display = 'grid';
 
     const contentContainer = document.getElementById('level-content-container');
     if (contentContainer) {
@@ -449,6 +449,5 @@ function showLessonsGrid() {
         if (timerInterval) clearInterval(timerInterval);
     }
 }
-
 
 fetch('sidebar.html').then(r => r.ok ? r.text() : '').then(data => document.getElementById('sidebar-placeholder').innerHTML = data);

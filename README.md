@@ -1,43 +1,71 @@
 # ⌨️ Hebrew Blind Typing Tutor
 
-A fully interactive web application designed to teach Hebrew touch typing. Features gamified progression, real-time statistics, and user profile management.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![GitHub Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
-[**🔴 Live Demo**](LINK_TO_YOUR_GITHUB_PAGES_HERE)
+> A fully interactive, single-page web application designed to help users master Hebrew touch typing through gamified progression and real-time analytics.
+
+[**🔴 View Live Demo**](https://eranmal.github.io/hebrew-blind-typing/login.html)
+
+---
+
+## 📖 About the Project
+
+This application was built to solve the challenge of learning the Hebrew keyboard layout efficiently. Unlike standard typing tests, this tool offers a structured curriculum that builds muscle memory key-by-key. It features a custom-built typing engine that handles real-time validation, multi-user progress tracking via LocalStorage, and a dynamic visual keyboard that reacts to user input.
 
 ## ✨ Key Features
 
-* **Progressive Learning:** 8 Lessons with 4 difficulty levels each.
-* **Real-time Feedback:** Visual keyboard cues, instant error highlighting, and "keep-going" validation logic.
-* **User System:** LocalStorage-based authentication (Login/Signup) and multi-user support.
-* **Statistics Dashboard:** Tracks Words Per Minute (WPM), accuracy, and personal bests.
-* **Test Mode:** Customizable typing tests by word count or time limit (15s - 2m).
-* **Smart Keyboard:** Visual simulation of a Hebrew keyboard layout.
+### 🎮 Interactive Learning Experience
+* **Live Virtual Keyboard:** A responsive on-screen keyboard that lights up in real-time, mirroring your physical keystrokes to guide finger placement without looking down.
+* **"Keep-Going" Validation:** A smart error-handling system that highlights correct letters in white and errors in red, allowing the user to continue typing naturally without forced stops.
+* **Gamified Curriculum:** 8 structured lessons, each divided into 4 difficulty levels (32 total stages), ensuring gradual mastery of the alphabet.
 
-## 🛠️ Technical Stack
+### 🧪 Advanced Testing Suite
+Users can challenge themselves with a flexible testing system:
+* **Time Attack Mode:** Race against the clock with preset durations (15s, 30s, 45s, 1m, 1.5m, 2m).
+* **Word Count Mode:** Focus on endurance with fixed word limits (10 to 100 words).
+* **Randomized Content:** The test generator pulls from a diverse "Word Bank" to ensure no two tests are ever the same.
 
-* **Frontend:** HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript (ES6+).
-* **Storage:** Browser LocalStorage for persistent user progress and stats.
-* **Architecture:** Component-based loading using JavaScript `fetch` API.
+### 📊 User Profile & Analytics
+* **Multi-User Support:** Complete authentication system allowing multiple users to create accounts on the same device.
+* **Persistent Progress:** Uses `localStorage` to save completed levels (visualized by blue indicators) and user statistics permanently.
+* **Smart Dashboard:** Tracks metrics including:
+    * **WPM (Words Per Minute):** Calculated based on successfully completed words.
+    * **Accuracy:** Tracks deletion counts and error rates.
+    * **Personal Bests:** Saves and displays the user's highest WPM record.
 
-## 🚀 How to Run
+## 🛠️ Technical Architecture
 
-1.  Clone the repository:
+* **Core:** Built entirely with **Vanilla JavaScript (ES6+)**, HTML5, and CSS3. No external frameworks were used, demonstrating deep understanding of DOM manipulation and state management.
+* **Data Persistence:** Implemented a custom JSON-based storage wrapper for `localStorage` to handle user sessions and data serialization.
+* **Dynamic Loading:** Utilizes the JavaScript `fetch` API to modularly load lesson content and components (like the keyboard), keeping the codebase clean and maintainable.
+* **Responsive UI:** Designed with CSS Grid and Flexbox to ensure the application works on various screen sizes.
+
+## 🚀 How to Run Locally
+
+Because this project uses the `fetch` API for modular loading, it requires a local server to run (browsers block file-system requests for security).
+
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/hebrew-typing-tutor.git](https://github.com/YOUR_USERNAME/hebrew-typing-tutor.git)
+    git clone [https://github.com/eranmal/hebrew-blind-typing.git](https://github.com/eranmal/hebrew-blind-typing.git)
     ```
-2.  Open `index.html` in a live server (or upload to a web host).
-    * *Note: Due to `fetch()` security policies, this will not run by simply double-clicking the HTML file locally. Please use VS Code 'Live Server' extension.*
+2.  **Run with Live Server:**
+    * Open the project folder in **VS Code**.
+    * Install the "Live Server" extension.
+    * Right-click `index.html` (or `login.html`) and select **"Open with Live Server"**.
 
 ## 📸 Screenshots
 
-![Game Interface](assets/images/screenshot1.png)
-*The main typing interface with visual keyboard.*
-
-![Profile Stats](assets/images/screenshot2.png)
-*User profile showing WPM analysis.*
+| Typing Interface | Profile Dashboard |
+|:---:|:---:|
+| ![Interface](assets/images/screenshot1.png) | ![Stats](assets/images/screenshot2.png) |
+| *Real-time visual feedback and validation* | *WPM tracking and user statistics* |
 
 ## 👨‍💻 Author
 
 **Eran Malachi**
-* [LinkedIn](https://il.linkedin.com/in/eran-malachi-6797a5393)
-* [GitHub](https://github.com/eranmal)
+
+* [**LinkedIn**](https://il.linkedin.com/in/eran-malachi-6797a5393)
+* [**GitHub**](https://github.com/eranmal)
